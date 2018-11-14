@@ -102,8 +102,6 @@ footer {
   display: grid;
   gap: 2em;
   margin: 2em 0;
-  color: white;
-  text-shadow: 1px 1px 5px hsla(0, 0%, 0%, 0.3);
 }
 
 .show {
@@ -129,17 +127,7 @@ footer {
 
 .show a {
   font: bold 1.4em Poppins;
-  color: white;
   text-shadow: none;
-}
-
-.show .btn {
-  display: inline-block;
-  margin: 1em 0;
-  padding: 0.5em 1em;
-  border: 0.2em solid white;
-  border-radius: 0.4em;
-  text-decoration: none;
 }
 
 .winter {
