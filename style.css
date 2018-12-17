@@ -151,3 +151,9 @@ footer {
 .logos img {
   flex: 1 1 10em;
 }
+
+.cols {
+  display: grid;
+  grid: auto-flow auto / repeat(auto-fit, minmax(24em, 1fr));
+  gap: 3em 4em;
+}
