@@ -1,5 +1,8 @@
 # Redirect french and german users to the suitable page
 # there CANNOT be spaces in the last parameter: Country=x,y,z or Language=xx,yy
-/*  /de/:splat 302
+
 # Redirect french users to /fr
 /*  /fr/:splat 302  Language=fr
+
+# Other languages
+/*  /de/:splat 302
