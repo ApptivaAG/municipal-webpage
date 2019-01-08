@@ -8,7 +8,7 @@ h1,
 h2,
 h3 {
   font-family: "Poppins", sans-serif;
-  line-height: 1;
+  line-height: 1.1;
 }
 
 h1 {
@@ -188,10 +188,22 @@ footer .container {
   gap: 3em 4em;
 }
 
-.lang-page {
+.center-v-h {
   display: flex;
   height: 100%;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.center-v {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.center-v > :last-child,
+.center-v-h > :last-child {
+  margin-bottom: 20%;
 }
