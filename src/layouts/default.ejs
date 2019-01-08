@@ -40,7 +40,10 @@
       property="og:image"
       content="<%= site.url+(page.image || site.image) %>"
     />
-    <meta property="og:url" content="<%= site.url+(page.slug || '') %>" />
+    <meta
+      property="og:url"
+      content="<%= site.url+(page.slug || '/'+page.lang+'/') %>"
+    />
     <meta property="og:site_name" content="<%= site.title %>" />
     <meta property="og:locale" content="de" />
     <meta property="og:type" content="website" />
