@@ -5,7 +5,7 @@ module.exports = {
   },
   site: {
     title: "Suisse Municipal",
-    url: "https://deploy-preview-1--suissemunicipal.netlify.com",
+    url: "https://suissemunicipal.ch",
     image: "/img/meta-image.jpg"
   }
 };
