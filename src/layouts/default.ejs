@@ -23,6 +23,25 @@
     <title><%= page.title %> - <%= site.title %></title>
     <link rel="stylesheet" href="/css/styles.css" />
 
+    <!-- Search Engine -->
+    <meta name="description" content="<%= page.description %>" />
+    <meta name="image" content="<%= site.url+site.image %>" />
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="<%= page.title %> - <%= site.title %>" />
+    <meta itemprop="description" content="<%= page.description %>" />
+    <meta
+      itemprop="image"
+      content="<%= site.url+(page.image || site.image) %>"
+    />
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="<%= page.title %> - <%= site.title %>" />
+    <meta name="og:description" content="<%= page.description %>" />
+    <meta name="og:image" content="<%= site.url+site.image %>" />
+    <meta name="og:url" content="<%= site.url %>" />
+    <meta name="og:site_name" content="<%= site.title %>" />
+    <meta name="og:locale" content="de" />
+    <meta name="og:type" content="website" />
+
     <!-- Google Analytics -->
     <script
       async
