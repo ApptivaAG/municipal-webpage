@@ -5,7 +5,7 @@ module.exports = {
   },
   site: {
     title: "Suisse Municipal",
-    url: "https://suissemunicipal.ch",
+    url: "https://www.suissemunicipal.ch",
     image: "/img/meta-image.jpg"
   }
 };
