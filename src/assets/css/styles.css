@@ -181,7 +181,7 @@ footer .container {
 
 .cols {
   display: grid;
-  grid: auto-flow auto / repeat(auto-fit, minmax(24em, 1fr));
+  grid: auto-flow auto / repeat(auto-fit, minmax(21em, 1fr));
   gap: 3em 4em;
 }
 
