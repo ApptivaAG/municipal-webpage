@@ -132,6 +132,8 @@ footer .container {
 
 .show {
   padding: 1em 2em;
+  border: 1px solid #888;
+  border-radius: 5px;
 }
 
 .show h2 {
