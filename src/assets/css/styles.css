@@ -180,3 +180,11 @@ footer .container {
   grid: auto-flow auto / repeat(auto-fit, minmax(24em, 1fr));
   gap: 3em 4em;
 }
+
+.lang-page {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
