@@ -13,5 +13,5 @@
 /ueber-uns.html /de/about/ 301
 /wintershow-2019 /de/wintershow-2019/ 301
 
-/de/* /de/404/ 404
 /fr/* /fr/404/ 404
+/* /de/404/ 404
