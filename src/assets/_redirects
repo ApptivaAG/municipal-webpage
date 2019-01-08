@@ -6,3 +6,9 @@
 
 # Other languages
 /  /de/ 302
+
+# SEO redirects
+/kontakt.html /de/contact/ 301
+/suisse-municipal-2019 /de/suisse-municipal-2019/ 301
+/ueber-uns.html /de/about/ 301
+/wintershow-2019 /de/wintershow-2019/ 301
