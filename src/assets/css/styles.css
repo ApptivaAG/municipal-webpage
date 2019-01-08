@@ -100,9 +100,11 @@ footer .container {
   justify-content: space-between;
 }
 
-.lang-switch a,
-.lang-switch span {
-  color: #888;
+.lang-switch a {
+  color: #fff;
+}
+.lang-switch {
+  color: #bbb;
 }
 
 @media (min-width: 600px) {
