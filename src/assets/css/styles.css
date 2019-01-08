@@ -21,6 +21,10 @@ body {
   min-height: 100vh;
 }
 
+main {
+  display: block;
+}
+
 section {
   padding: 2em 0;
 }
@@ -32,6 +36,15 @@ header {
 img {
   display: block;
   width: 100%;
+}
+
+a {
+  font-weight: 700;
+  color: #444;
+}
+
+a.back-link {
+  text-transform: uppercase;
 }
 
 nav ul {
@@ -82,6 +95,18 @@ footer {
   background-color: #444;
 }
 
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lang-switch a {
+  color: #fff;
+}
+.lang-switch {
+  color: #bbb;
+}
+
 @media (min-width: 600px) {
   .right {
     text-align: right;
@@ -107,6 +132,8 @@ footer {
 
 .show {
   padding: 1em 2em;
+  border: 1px solid #888;
+  border-radius: 5px;
 }
 
 .show h2 {
@@ -156,4 +183,12 @@ footer {
   display: grid;
   grid: auto-flow auto / repeat(auto-fit, minmax(24em, 1fr));
   gap: 3em 4em;
+}
+
+.lang-page {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

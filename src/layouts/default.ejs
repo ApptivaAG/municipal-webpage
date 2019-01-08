@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="<%= page.lang %>">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700|Poppins:700"
+      rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title><%= page.title %> - <%= site.title %></title>
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <!-- Search Engine -->
+    <meta name="description" content="<%= page.description %>" />
+    <meta name="image" content="<%= site.url+(page.image || site.image) %>" />
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="<%= page.title %> - <%= site.title %>" />
+    <meta itemprop="description" content="<%= page.description %>" />
+    <meta
+      itemprop="image"
+      content="<%= site.url+(page.image || site.image) %>"
+    />
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta property="og:title" content="<%= page.title %> - <%= site.title %>" />
+    <meta property="og:description" content="<%= page.description %>" />
+    <meta
+      property="og:image"
+      content="<%= site.url+(page.image || site.image) %>"
+    />
+    <meta
+      property="og:url"
+      content="<%= site.url+(page.slug || '/'+page.lang+'/') %>"
+    />
+    <meta property="og:site_name" content="<%= site.title %>" />
+    <meta property="og:locale" content="de" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-131907677-1"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-131907677-1");
+    </script>
+  </head>
+  <body>
+    <%- include('partials/header-'+page.lang, {lang: page.lang}) %>
+
+    <main class="content"><%- body %></main>
+
+    <%- include('partials/footer-'+page.lang, {lang: page.lang}) %>
+  </body>
+</html>
