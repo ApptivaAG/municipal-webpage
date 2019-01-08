@@ -129,7 +129,7 @@ footer .container {
 
 .shows {
   display: grid;
-  gap: 2em;
+  grid-gap: 2em;
   margin: 2em 0;
 }
 
