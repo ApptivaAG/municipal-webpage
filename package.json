@@ -1,0 +1,16 @@
+{
+  "name": "suisse-municipal",
+  "version": "1.0.0",
+  "description": "Webpage of Suisse Municipal",
+  "main": "site.config.js",
+  "scripts": {
+    "start": "nanogen start",
+    "build": "nanogen build"
+  },
+  "keywords": [],
+  "author": "Apptiva AG",
+  "license": "ISC",
+  "devDependencies": {
+    "nanogen": "^0.4.2"
+  }
+}
