@@ -7,12 +7,25 @@ description: >
 image: /img/wintershow.jpg
 slug: /fr/wintershow-2019/
 lang: fr
+images:
+  - name: img1
+    uri: /img/wintershow-2019/wintershow-2019-1.jpg
+  - name: img2
+    uri: /img/wintershow-2019/wintershow-2019-2.jpg
+  - name: img3
+    uri: /img/wintershow-2019/wintershow-2019-3.jpg
+  - name: img4
+    uri: /img/wintershow-2019/wintershow-2019-4.jpg
+  - name: img5
+    uri: /img/wintershow-2019/wintershow-2019-5.jpg
+  - name: img6
+    uri: /img/wintershow-2019/wintershow-2019-6.jpg
 ---
 
 <section class="winter">
   <div class="container">
     <a class="back-link" href="/fr">&#8592; Retour</a>
-    <h1>Wintershow</h1>
+    <h1>Wintershow 2019</h1>
     <h2>
       Le 30 janvier 2019, Gurnigel, Rüschegg <br />
       Le 31 janvier 2019, Elm, champ de tir blindé Wicheln
@@ -22,31 +35,20 @@ lang: fr
 
 <section>
   <div class="container">
-    <h2>Wintershow</h2>
+    <h2>Impressions</h2>
     <div class="cols">
-      <div>
-        <p>
-          Faites l'expérience de machines et d'équipements professionnels en
-          direct sur le site de l'entreprise. l'utilisation hivernale la plus
-          difficile.
-        </p>
-        <p>
-          Les présentations avec repas chauds débuteront à 11h et se
-          poursuivront jusqu'à 11h. ont lieu par tous les temps. Les
-          emplacements sont bien signalisés.
-        </p>
-        <h3>Lieu et date</h3>
-        <ul>
-          <li>Le 30 janvier 2019, Gurnigel, Rüschegg</li>
-          <li>Le 31 janvier 2019, Elm, champ de tir blindé Wicheln</li>
-        </ul>
-        <a class="btn" href="/attachments/wintershow-2019/Flyer_2019_FR.pdf"
-          >Flyer (PDF)</a
-        >
-      </div>
-      <div style="margin: 1em 0;">
-        <img src="/img/wintershow-2019/logos-fr.jpg" alt="Logos" />
-      </div>
+      <% page.images.forEach(function(image) { %>
+      <a href="#<%= image.name %>">
+        <img src="<%= image.uri %>" />
+      </a>
+      <% }) %>
     </div>
   </div>
 </section>
+
+<!-- lightbox container hidden with CSS -->
+<% page.images.forEach(function(image) { %>
+<a href="#_" class="lightbox" id="<%= image.name %>">
+  <img src="<%= image.uri %>" />
+</a>
+<% }) %>

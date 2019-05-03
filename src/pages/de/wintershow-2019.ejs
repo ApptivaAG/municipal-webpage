@@ -6,12 +6,25 @@ description: >
 image: /img/wintershow.jpg
 slug: /de/wintershow-2019/
 lang: de
+images:
+  - name: img1
+    uri: /img/wintershow-2019/wintershow-2019-1.jpg
+  - name: img2
+    uri: /img/wintershow-2019/wintershow-2019-2.jpg
+  - name: img3
+    uri: /img/wintershow-2019/wintershow-2019-3.jpg
+  - name: img4
+    uri: /img/wintershow-2019/wintershow-2019-4.jpg
+  - name: img5
+    uri: /img/wintershow-2019/wintershow-2019-5.jpg
+  - name: img6
+    uri: /img/wintershow-2019/wintershow-2019-6.jpg
 ---
 
-<section class="winter">
+<section class="winter show2019">
   <div class="container">
     <a class="back-link" href="/de">&#8592; Zurück</a>
-    <h1>Wintershow</h1>
+    <h1>Wintershow 2019</h1>
     <h2>
       30. Januar 2019, Gurnigel, Rüschegg <br />
       31. Januar 2019, Elm, Panzerschiessplatz Wicheln
@@ -21,29 +34,20 @@ lang: de
 
 <section>
   <div class="container">
-    <h2>Wintershow</h2>
+    <h2>Impressionen aus der Wintershow 2019</h2>
     <div class="cols">
-      <div>
-        <p>
-          Erleben Sie professionelle Maschinen und Geräte live vor Ort im
-          härtesten Wintereinsatz.
-        </p>
-        <p>
-          Die Vorführungen mit warmer Verpflegung beginnen jeweils um 11 Uhr und
-          finden bei jeder Witterung statt. Die Plätze sind gut ausgeschildert.
-        </p>
-        <h3>Ort und Datum</h3>
-        <ul>
-          <li>30. Januar 2019, Gurnigel, Rüschegg</li>
-          <li>31. Januar 2019, Elm, Panzerschiessplatz Wicheln</li>
-        </ul>
-        <a class="btn" href="/attachments/wintershow-2019/Flyer_2019_DE.pdf"
-          >Flyer (PDF)</a
-        >
-      </div>
-      <div style="margin: 1em 0;">
-        <img src="/img/wintershow-2019/logos-de.jpg" alt="Logos" />
-      </div>
+      <% page.images.forEach(function(image) { %>
+      <a href="#<%= image.name %>">
+        <img src="<%= image.uri %>" />
+      </a>
+      <% }) %>
     </div>
   </div>
 </section>
+
+<!-- lightbox container hidden with CSS -->
+<% page.images.forEach(function(image) { %>
+<a href="#_" class="lightbox" id="<%= image.name %>">
+  <img src="<%= image.uri %>" />
+</a>
+<% }) %>
