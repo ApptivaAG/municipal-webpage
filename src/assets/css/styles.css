@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -131,6 +140,39 @@ footer .container {
   border: 0.2em solid #444;
   border-radius: 0.4em;
   text-decoration: none;
+}
+
+.block {
+  display: block;
+}
+
+/* Specific styles */
+
+ul.no-bullets {
+  padding: 0;
+  list-style: none;
+}
+
+ul.small-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2em 0 4em;
+}
+
+ul.small-logos > li {
+  flex: 0 0 140px;
+}
+
+@media (min-width: 450px) {
+  ul.small-logos > li {
+    flex: 0 0 180px;
+  }
+}
+
+ul.small-logos img {
+  padding: 1em 2em;
 }
 
 .shows {
