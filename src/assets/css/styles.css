@@ -75,7 +75,7 @@ nav ul {
 
 nav ul li a {
   display: block;
-  font: bold 0.9em "Poppins";
+  font: bold 0.8em "Poppins";
   text-decoration: none;
   color: #444;
 }
@@ -87,7 +87,13 @@ nav ul li a {
 }
 
 nav ul li + li {
-  margin-left: 2em;
+  margin-left: 1em;
+}
+
+@media (min-width: 450px) {
+  nav ul li + li {
+    margin-left: 2em;
+  }
 }
 
 li.logo {
@@ -162,7 +168,7 @@ ul.small-logos {
 }
 
 ul.small-logos > li {
-  flex: 0 0 140px;
+  flex: 0 0 160px;
 }
 
 @media (min-width: 450px) {
@@ -182,9 +188,15 @@ ul.small-logos img {
 }
 
 .show {
+  font-size: 0.8em;
   padding: 1em 2em;
   border: 1px solid #888;
   border-radius: 5px;
+}
+@media (min-width: 450px) {
+  .show {
+    font-size: 1em;
+  }
 }
 
 .show h2 {
