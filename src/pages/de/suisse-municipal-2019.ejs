@@ -12,6 +12,8 @@ images:
   - name: Hänni Agrocentre Sàrl
     uri: /img/suisse-municipal-2019/logos/Agrocentre.png
     link: https://www.haenni-agrocentre.ch
+  - name: Ambrogio
+    uri: /img/suisse-municipal-2019/logos/ambrogio.png
   - name: Bio-Circle Surface Technology AG
     uri: /img/suisse-municipal-2019/logos/Bio-Circle.png
     link: http://www.bio-circle.ch
@@ -20,21 +22,39 @@ images:
   - name: Gemac GmbH
     uri: /img/suisse-municipal-2019/logos/Gemac-GmbH.jpg
     link: https://www.gemac.ch
-  - name: Geniomeccanica SA 
+  - name: Geniomeccanica SA
     uri: /img/suisse-municipal-2019/logos/Geniomeccanica.jpg
     link: https://www.geniomeccanica.ch
-  - name: Hako Schweiz AG 
+  - name: Gumix
+    uri: /img/suisse-municipal-2019/logos/Gumix.png
+    link: http://www.gumix-elastor.hr
+  - name: Hako Schweiz AG
     uri: /img/suisse-municipal-2019/logos/Hako.jpg
     link: https://www.hako.ch
+  - name: Hardox
+    uri: /img/suisse-municipal-2019/logos/Hardox.png
   - name: Landtechnik Heini AG
     uri: /img/suisse-municipal-2019/logos/HeiniAG.png
     link: https://www.heini-ag.ch
-  - name: img5
+  - name: hostettler motoren ag
+    uri: /img/suisse-municipal-2019/logos/hostettler-motoren.jpg
+    link: https://shop.hma.ch
+  - name: Kaaz
     uri: /img/suisse-municipal-2019/logos/Kaaz.jpg
-  - name: img5
+  - name: Keckex
     uri: /img/suisse-municipal-2019/logos/Keckex.png
-  - name: img5
+  - name: Maruyama
     uri: /img/suisse-municipal-2019/logos/Maruyama.jpg
+  - name: Mettler Tools GmbH
+    uri: /img/suisse-municipal-2019/logos/mettler-tools.png
+    link: https://www.mettlertools.ch
+  - name: Norskal
+    uri: /img/suisse-municipal-2019/logos/Norskal.png
+    link: https://www.mettlertools.ch
+  - name: Ransomes Jacobsen
+    uri: /img/suisse-municipal-2019/logos/Ransomes-Jacobsen.jpg
+  - name: Rigi-Trac
+    uri: /img/suisse-municipal-2019/logos/rigi-trac.jpg
   - name: Schiltrac Fahrzeugbau GmbH
     uri: /img/suisse-municipal-2019/logos/Schiltrac.jpg
     link: https://www.schiltrac.ch
@@ -44,27 +64,15 @@ images:
   - name: Stiga Garden
     uri: /img/suisse-municipal-2019/logos/Stiga.png
     link: https://www.stiga-garden.ch
+  - name: Tenax
+    uri: /img/suisse-municipal-2019/logos/Tenax.png
   - name: Toro
     uri: /img/suisse-municipal-2019/logos/TORO.jpg
     link: https://www.toro.com/de-de
-  - name: img5
-    uri: /img/suisse-municipal-2019/logos/Tenax.png
-  - name: img5
-    uri: /img/suisse-municipal-2019/logos/ambrogio.png
-  - name: hostettler motoren ag
-    uri: /img/suisse-municipal-2019/logos/hostettler-motoren.jpg
-    link: https://shop.hma.ch
-  - name: Mettler Tools GmbH
-    uri: /img/suisse-municipal-2019/logos/mettler-tools.png
-    link: https://www.mettlertools.ch
-  - name: img5
-    uri: /img/suisse-municipal-2019/logos/rigi-trac.jpg
-  - name: img5
-    uri: /img/suisse-municipal-2019/logos/wintec.png
-  - name: Ransomes Jacobsen
-    uri: /img/suisse-municipal-2019/logos/Ransomes-Jacobsen.jpg
   - name: Ventrac
     uri: /img/suisse-municipal-2019/logos/ventrac-onetractor.png
+  - name: Wintec
+    uri: /img/suisse-municipal-2019/logos/wintec.png
 ---
 
 <section class="summer">
@@ -83,21 +91,20 @@ images:
     <h2>Aussteller</h2>
     <ul class="no-bullets small-logos">
       <% page.images.forEach(function(image) { %>
-        <li>
-          <% if(image.link){ %>
-            <a class="block" href="<%= image.link %>" target="_blank" rel="noopener noreferrer">
-              <img
-                src="<%= image.uri %>"
-                alt="<%= image.name %>"
-              />
-            </a>
-          <% } else{ %>  
-            <img
-              src="<%= image.uri %>"
-              alt="<%= image.name %>"
-            />
-          <% } %>
-        </li>
+      <li>
+        <% if(image.link){ %>
+        <a
+          class="block"
+          href="<%= image.link %>"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="<%= image.uri %>" alt="<%= image.name %>" />
+        </a>
+        <% } else{ %>
+        <img src="<%= image.uri %>" alt="<%= image.name %>" />
+        <% } %>
+      </li>
       <% }) %>
     </ul>
     <h2>Hintergrund der Suisse Municipal</h2>
