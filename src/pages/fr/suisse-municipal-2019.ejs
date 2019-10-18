@@ -7,6 +7,22 @@ description: >
 image: /img/sommershow.jpg
 slug: /fr/suisse-municipal-2019/
 lang: fr
+impressions:
+  - name: Bild 1
+    uri: /img/suisse-municipal-2019/impressions/impression-0.jpeg
+  - name: Bild 2
+    uri: /img/suisse-municipal-2019/impressions/impression-1.jpeg
+  - name: Bild 3
+    uri: /img/suisse-municipal-2019/impressions/impression-2.jpeg
+  - name: Bild 4
+    uri: /img/suisse-municipal-2019/impressions/impression-3.jpeg
+  - name: Bild 5
+    uri: /img/suisse-municipal-2019/impressions/impression-4.jpeg
+  - name: Bild 6
+    uri: /img/suisse-municipal-2019/impressions/impression-5.jpeg
+  - name: Bild 7
+    uri: /img/suisse-municipal-2019/impressions/impression-6.jpeg
+
 images:
   - name: Hänni Agrocentre Sàrl
     uri: /img/suisse-municipal-2019/logos/Agrocentre.png
@@ -87,6 +103,26 @@ images:
     </h3>
   </div>
 </section>
+
+<section>
+  <div class="container">
+    <h2>Impressions</h2>
+    <div class="cols">
+      <% page.impressions.forEach(function(image) { %>
+      <a href="#<%= image.name %>">
+        <img src="<%= image.uri %>" />
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- lightbox container hidden with CSS -->
+<% page.impressions.forEach(function(image) { %>
+<a href="#_" class="lightbox" id="<%= image.name %>">
+  <img src="<%= image.uri %>" />
+</a>
+<% }) %>
 
 <section>
   <div class="container">

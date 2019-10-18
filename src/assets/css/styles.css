@@ -231,6 +231,9 @@ ul.small-logos img {
 .summer {
   background: center / cover no-repeat url(/img/sommershow.jpg);
 }
+.summer.show2019 {
+  background-image: url(/img/suisse-municipal-2019/impressions/impression-pano.jpg);
+}
 
 .logos {
   display: flex;
