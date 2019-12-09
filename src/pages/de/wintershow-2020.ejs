@@ -6,6 +6,63 @@ description: >
 image: /img/wintershow.jpg
 slug: /de/wintershow-2020/
 lang: de
+exhibitors:
+  - name: Ad. Bachmann
+    uri: /img/wintershow-2020/logos/ad-bachmann.jpg
+    link: http://www.adbachmannag.ch/
+  - name: Blue 4 you
+    uri: /img/wintershow-2020/logos/blueforyou.png
+  - name: Fiedler
+    uri: /img/wintershow-2020/logos/fiedler.jpg
+    link: https://www.fiedler-maschinenbau.de/
+  - name: Hako
+    uri: /img/wintershow-2020/logos/hako.jpg
+    link: https://www.hako.ch/
+  - name: Heini
+    uri: /img/wintershow-2020/logos/heini.png
+    link: https://www.heini-ag.ch/
+  - name: Hilltip
+    uri: /img/wintershow-2020/logos/hilltip.jpg
+    link: http://www.grebo-ag.ch/
+  - name: Hostettler
+    uri: /img/wintershow-2020/logos/hostettler.jpg
+    link: https://www.hostettler.com/power-products/
+  - name: JCB
+    uri: /img/wintershow-2020/logos/jcb.png
+    link: http://www.sercolandtechnik.ch/deu/
+  - name: Keckex
+    uri: /img/wintershow-2020/logos/keckex.jpg
+    link: https://www.keckex.com/
+  - name: König
+    uri: /img/wintershow-2020/logos/koenig.jpg
+    link: https://konigchain.com/de_ch/ketten_de/
+  - name: Kubota
+    uri: /img/wintershow-2020/logos/kubota.jpg
+  - name: Mutter
+    uri: /img/wintershow-2020/logos/mutter.jpg
+    link: https://www.mutter-solutions.com/
+  - name: Øveraasen
+    uri: /img/wintershow-2020/logos/overaasen.jpg
+    link: https://overaasen.no/overaasen
+  - name: Schiltrac
+    uri: /img/wintershow-2020/logos/schiltrac.png
+    link: https://www.barmettler.ch/
+  - name: Snowstick
+    uri: /img/wintershow-2020/logos/snowstick.jpg
+    link: https://snowstick.info/de/
+  - name: Stadiko
+    uri: /img/wintershow-2020/logos/stadiko.png
+  - name: Steyr
+    uri: /img/wintershow-2020/logos/steyr.png
+    link: https://www.case-steyr-center.ch/
+  - name: Stiga
+    uri: /img/wintershow-2020/logos/stiga.png
+  - name: Syntrac
+    uri: /img/wintershow-2020/logos/syntrac.png
+  - name: Timan
+    uri: /img/wintershow-2020/logos/timan.jpg
+  - name: Wintec
+    uri: /img/wintershow-2020/logos/wintec.png
 ---
 
 <section class="winter">
@@ -21,8 +78,27 @@ lang: de
 
 <section>
   <div class="container">
-    <h2>Wintershow 2020</h2>
+    <h2>Aussteller</h2>
+    <ul class="no-bullets small-logos">
+      <% page.exhibitors.forEach(function(image) { %>
+      <li>
+        <% if(image.link){ %>
+        <a
+          class="block"
+          href="<%= image.link %>"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="<%= image.uri %>" alt="<%= image.name %>" />
+        </a>
+        <% } else{ %>
+        <img src="<%= image.uri %>" alt="<%= image.name %>" />
+        <% } %>
+      </li>
+      <% }) %>
+    </ul>
 
+    <h2>Wintershow 2020</h2>
     <p>
       Erleben Sie professionelle Maschinen und Geräte live vor Ort im härtesten
       Wintereinsatz.
@@ -35,6 +111,12 @@ lang: de
     <ul>
       <li>22. - 23. Januar 2020 in 6490 Andermatt</li>
     </ul>
+  </div>
+</section>
+
+<section class="section-dark">
+  <div class="container">
+    <h2>Dokumente</h2>
     <p>
       <a class="btn" href="/attachments/wintershow-2020/Ausstellerreglement.pdf"
         >Reglement (PDF)</a
@@ -43,6 +125,51 @@ lang: de
         class="btn"
         href="/attachments/wintershow-2020/Anmeldung_Wintershow_2020.pdf"
         >Anmeldung (PDF)</a
+      >&nbsp; &nbsp;
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Mit dem Bus an die Wintershow</h2>
+    <p>
+      Kommen Sie und Ihre Kollegen entspannt mit dem Bus an die Wintershow 2020
+      in Andermatt!
+    </p>
+    <p>
+      Einsteigeorte am 22 + 23 Januar 2020 (weitere Einsteigeorte nach
+      Vereinbarung mögl.)
+    </p>
+    <ul>
+      <li>Restauroute Gruyère (A12) 06h45 Abfahrt</li>
+      <li>Restauroute Bavois (A1) 06h30 Abfahrt</li>
+      <li>Restauroute Grauholz (A1) 07h40 Abfahrt</li>
+    </ul>
+    <p>
+      Ankunft gegen 10:15 Uhr in Andermatt, Beginn der Präsentationen 11:00 Uhr.
+      Anschließend haben Sie die Möglichkeit, die Fahrzeuge und Maschinen vor
+      Ort zu testen (die Regeln des Veranstalters sind zu beachten).
+    </p>
+    <p>
+      Retour: Abfahrt ca. 15.30 (Grauholz ca. 18.00; Gruyère ca. 18.45; Bavois
+      ca. 19.00)
+    </p>
+    <ul>
+      <li>
+        Die Reise im unserem Bus ist kostenlos und durch snowstick gmbh
+        offeriert.
+      </li>
+      <li>
+        Wir freuen uns auf Ihre Anmeldung per E-Mail: office@snowstick.ch.
+      </li>
+      <li>Anmeldeschluss: 15. Januar 2020.</li>
+    </ul>
+    <p>
+      <a
+        class="btn"
+        href="/attachments/wintershow-2020/Wintershow-2020-Anreise-Bus-DE.pdf"
+        >Flyer (PDF)</a
       >&nbsp; &nbsp;
     </p>
   </div>
