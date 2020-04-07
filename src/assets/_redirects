@@ -2,10 +2,10 @@
 # there CANNOT be spaces in the last parameter: Country=x,y,z or Language=xx,yy
 
 # Redirect french users to /fr
-/  /fr/ 302 Language=fr
+/  /fr/ 302! Language=fr
 
 # Other languages
-/  /de/ 302
+/  /de/ 302!
 
 # SEO redirects
 /kontakt.html /de/contact/ 301
