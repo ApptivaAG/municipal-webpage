@@ -6,6 +6,36 @@ description: >
 image: /img/wintershow.jpg
 slug: /de/wintershow-2020/
 lang: de
+impressions:
+  - name: Bild 1
+    uri: /img/wintershow-2020/impressions/impression-1.jpg
+  - name: Bild 2
+    uri: /img/wintershow-2020/impressions/impression-2.jpg
+  - name: Bild 3
+    uri: /img/wintershow-2020/impressions/impression-3.jpg
+  - name: Bild 4
+    uri: /img/wintershow-2020/impressions/impression-4.jpg
+  - name: Bild 5
+    uri: /img/wintershow-2020/impressions/impression-5.jpg
+  - name: Bild 6
+    uri: /img/wintershow-2020/impressions/impression-6.jpg
+  - name: Bild 7
+    uri: /img/wintershow-2020/impressions/impression-7.jpg
+  - name: Bild 8
+    uri: /img/wintershow-2020/impressions/impression-8.jpg
+  - name: Bild 9
+    uri: /img/wintershow-2020/impressions/impression-9.jpg
+  - name: Bild 10
+    uri: /img/wintershow-2020/impressions/impression-10.jpg
+  - name: Bild 11
+    uri: /img/wintershow-2020/impressions/impression-11.jpg
+  - name: Bild 12
+    uri: /img/wintershow-2020/impressions/impression-12.jpg
+  - name: Bild 13
+    uri: /img/wintershow-2020/impressions/impression-13.jpg
+  - name: Bild 14
+    uri: /img/wintershow-2020/impressions/impression-14.jpg
+
 exhibitors:
   - name: Ad. Bachmann
     uri: /img/wintershow-2020/logos/ad-bachmann.jpg
@@ -66,7 +96,7 @@ exhibitors:
     uri: /img/wintershow-2020/logos/wintec.png
 ---
 
-<section class="winter">
+<section class="winter show2020">
   <div class="container">
     <a class="back-link" href="/de">&#8592; Zurück</a>
     <h1>Wintershow 2020</h1>
@@ -76,6 +106,26 @@ exhibitors:
     </h2>
   </div>
 </section>
+
+<section>
+  <div class="container">
+    <h2>Impressionen aus der Suisse Municipal 2020</h2>
+    <div class="cols">
+      <% page.impressions.forEach(function(image) { %>
+      <a href="#<%= image.name %>">
+        <img src="<%= image.uri %>" />
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- lightbox container hidden with CSS -->
+<% page.impressions.forEach(function(image) { %>
+<a href="#_" class="lightbox" id="<%= image.name %>">
+  <img src="<%= image.uri %>" />
+</a>
+<% }) %>
 
 <section>
   <div class="container">
@@ -98,77 +148,5 @@ exhibitors:
       </li>
       <% }) %>
     </ul>
-
-    <h2>Wintershow 2020</h2>
-    <p>
-      Erleben Sie professionelle Maschinen und Geräte live vor Ort im härtesten
-      Wintereinsatz.
-    </p>
-    <p>
-      Die Vorführungen mit warmer Verpflegung beginnen jeweils um 11 Uhr und
-      finden bei jeder Witterung statt. Die Plätze sind gut ausgeschildert.
-    </p>
-    <h3>Ort und Datum</h3>
-    <ul>
-      <li>22. - 23. Januar 2020 in 6490 Andermatt</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section-dark">
-  <div class="container">
-    <h2>Dokumente</h2>
-    <p>
-      <a
-        class="btn"
-        href="/attachments/wintershow-2020/WEB_hak_2019_01_flyer_wintershow20_d_web.pdf"
-        >Flyer (PDF)</a
-      >
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>Mit dem Bus an die Wintershow</h2>
-    <p>
-      Kommen Sie und Ihre Kollegen entspannt mit dem Bus an die Wintershow 2020
-      in Andermatt!
-    </p>
-    <p>
-      Einsteigeorte am 22 + 23 Januar 2020 (weitere Einsteigeorte nach
-      Vereinbarung mögl.)
-    </p>
-    <ul>
-      <li>Restauroute Gruyère (A12) 06h45 Abfahrt</li>
-      <li>Restauroute Bavois (A1) 06h30 Abfahrt</li>
-      <li>Restauroute Grauholz (A1) 07h40 Abfahrt</li>
-    </ul>
-    <p>
-      Ankunft gegen 10:15 Uhr in Andermatt, Beginn der Präsentationen 11:00 Uhr.
-      Anschließend haben Sie die Möglichkeit, die Fahrzeuge und Maschinen vor
-      Ort zu testen (die Regeln des Veranstalters sind zu beachten).
-    </p>
-    <p>
-      Retour: Abfahrt ca. 15.30 (Grauholz ca. 18.00; Gruyère ca. 18.45; Bavois
-      ca. 19.00)
-    </p>
-    <ul>
-      <li>
-        Die Reise im unserem Bus ist kostenlos und durch snowstick gmbh
-        offeriert.
-      </li>
-      <li>
-        Wir freuen uns auf Ihre Anmeldung per E-Mail: office@snowstick.ch.
-      </li>
-      <li>Anmeldeschluss: 15. Januar 2020.</li>
-    </ul>
-    <p>
-      <a
-        class="btn"
-        href="/attachments/wintershow-2020/Wintershow-2020-Anreise-Bus-DE.pdf"
-        >Mit dem Bus an die Wintershow (PDF)</a
-      >&nbsp; &nbsp;
-    </p>
   </div>
 </section>
