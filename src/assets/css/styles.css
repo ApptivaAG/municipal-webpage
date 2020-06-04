@@ -227,6 +227,13 @@ ul.small-logos img {
 .winter.show2019 {
   background-image: url(/img/wintershow-2019/wintershow-2019-pano1.jpg);
 }
+.winter.show2020 {
+  background-image: url(/img/wintershow-2020/pano.jpg);
+}
+.winter.show2020:before {
+  content: "";
+  background: red;
+}
 
 .summer {
   background: center / cover no-repeat url(/img/sommershow.jpg);

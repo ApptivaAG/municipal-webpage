@@ -7,6 +7,34 @@ description: >
 image: /img/wintershow.jpg
 slug: /fr/wintershow-2020/
 lang: fr
+impressions:
+  - name: Bild 1
+    uri: /img/wintershow-2020/impressions/impression-1.jpg
+  - name: Bild 2
+    uri: /img/wintershow-2020/impressions/impression-2.jpg
+  - name: Bild 3
+    uri: /img/wintershow-2020/impressions/impression-3.jpg
+  - name: Bild 4
+    uri: /img/wintershow-2020/impressions/impression-4.jpg
+  - name: Bild 5
+    uri: /img/wintershow-2020/impressions/impression-5.jpg
+  - name: Bild 6
+    uri: /img/wintershow-2020/impressions/impression-6.jpg
+  - name: Bild 7
+    uri: /img/wintershow-2020/impressions/impression-7.jpg
+  - name: Bild 8
+    uri: /img/wintershow-2020/impressions/impression-8.jpg
+  - name: Bild 9
+    uri: /img/wintershow-2020/impressions/impression-9.jpg
+  - name: Bild 10
+    uri: /img/wintershow-2020/impressions/impression-10.jpg
+  - name: Bild 11
+    uri: /img/wintershow-2020/impressions/impression-11.jpg
+  - name: Bild 12
+    uri: /img/wintershow-2020/impressions/impression-12.jpg
+  - name: Bild 13
+    uri: /img/wintershow-2020/impressions/impression-13.jpg
+
 exhibitors:
   - name: Ad. Bachmann
     uri: /img/wintershow-2020/logos/ad-bachmann.jpg
@@ -80,6 +108,26 @@ exhibitors:
 
 <section>
   <div class="container">
+    <h2>Impressions</h2>
+    <div class="cols">
+      <% page.impressions.forEach(function(image) { %>
+      <a href="#<%= image.name %>">
+        <img src="<%= image.uri %>" />
+      </a>
+      <% }) %>
+    </div>
+  </div>
+</section>
+
+<!-- lightbox container hidden with CSS -->
+<% page.impressions.forEach(function(image) { %>
+<a href="#_" class="lightbox" id="<%= image.name %>">
+  <img src="<%= image.uri %>" />
+</a>
+<% }) %>
+
+<section>
+  <div class="container">
     <h2>Exposants</h2>
     <ul class="no-bullets small-logos">
       <% page.exhibitors.forEach(function(image) { %>
@@ -99,81 +147,5 @@ exhibitors:
       </li>
       <% }) %>
     </ul>
-
-    <h2>Wintershow</h2>
-    <div class="cols">
-      <div>
-        <p>
-          Faites l'expérience de machines et d'équipements professionnels en
-          direct sur le site de l'entreprise. l'utilisation hivernale la plus
-          difficile.
-        </p>
-        <p>
-          Les présentations avec repas chauds débuteront à 11h et se
-          poursuivront jusqu'à 11h. ont lieu par tous les temps. Les
-          emplacements sont bien signalisés.
-        </p>
-        <h3>Lieu et date</h3>
-        <ul>
-          <li>
-            22 au 23 janvier 2020 à 6490 Andermatt
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section-dark">
-  <div class="container">
-    <h2>Documents</h2>
-    <p>
-      <a
-        class="btn"
-        href="/attachments/wintershow-2020/WEB_hak_2019_01_flyer_wintershow20_f_web.pdf"
-        >Dépliant (PDF)</a
-      >
-    </p>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <h2>En bus au spectacle Wintershow</h2>
-    <p>
-      Venez avec nous en bus/car au spectacle hivernal 2020 à Andermatt !
-    </p>
-    <p>
-      Lieux d’embarquement le 22 et 23 janvier 2020 :
-    </p>
-    <ul>
-      <li>Restauroute Gruyère (A12) 06h45 départ</li>
-      <li>Restauroute Bavois (A1) 06h30 départ</li>
-      <li>Restauroute Grauholz (A1) 07h40 départ</li>
-    </ul>
-    <p>
-      Arrivée vers 10h15 à Andermatt, début des présentations 11h00. Ensuite
-      possibilité de tester les équipements sur place (les règles de
-      l’organisateur sont à respecter)
-    </p>
-    <p>
-      Retour : Départ vers 15h30 (Grauholz vers 18h00 ; Gruyère vers 18h45 ;
-      Bavois vers 19h00)
-    </p>
-    <ul>
-      <li>Le voyage en bus est gratuit et offert par snowstick sarl.</li>
-      <li>
-        Nous nous réjouissons de recevoir votre inscription par e-mail :
-        office@snowstick.ch.
-      </li>
-      <li>Inscription svp. jusqu’au 15 janvier 2020.</li>
-    </ul>
-    <p>
-      <a
-        class="btn"
-        href="/attachments/wintershow-2020/Wintershow-2020-Venez-bus-FR.pdf"
-        >En bus au Wintershow (PDF)</a
-      >&nbsp; &nbsp;
-    </p>
   </div>
 </section>
