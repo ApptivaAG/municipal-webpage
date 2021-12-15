@@ -9,7 +9,7 @@ slug: /fr/wintershow-2021/
 lang: fr
 ---
 
-<section class="winter show2020">
+<section class="winter show2022">
   <div class="container">
     <a class="back-link" href="/de">&#8592; Zurück</a>
     <h1>Wintershow 2022</h1>
@@ -21,6 +21,145 @@ lang: fr
 </section>
 
 <section>
+  <div class="container">
+    <h2>Visitez le Wintershow 2022</h2>
+    <p>
+      Inscrivez-vous dès aujourd'hui et découvrez des machines et des
+      équipements professionnels sur place dans les conditions hivernales les
+      plus difficiles.
+    </p>
+    <p>
+      Les démonstrations commencent à 11 heures et ont lieu par tous les temps.
+      Le site est bien indiqué. Possibilité de se restaurer sur place.
+    </p>
+    <p>Nous nous réjouissons de vous accueillir.</p>
+    <h3 style="margin-top: 2em">NOUVEAU : Voyage confortable en bus</h3>
+    <ul>
+      <li>env. 07h30 au départ du restoroute Grauholz</li>
+      <li>env. 08h30 au départ de la gare d'Egerkingen</li>
+      <li>
+        env. 09h30 à partir du restoroute de Neuenkirch (direction Lucerne)
+      </li>
+    </ul>
+    <p style="margin-bottom: 4em">
+      D'autres lieux d'embarquement le long de l'itinéraire sont possibles sur
+      rendez-vous. Participation aux frais : 99 CHF. Délai d'inscription pour le
+      voyage en bus : 17 janvier 2022, 17.00 heures
+    </p>
+    <div class="card">
+      <h3>Annoncez votre visite</h3>
+      <p>
+        Inscrivez-vous ici pour votre visite.<br />
+        <b>Date limite d'inscription : 17 janvier 2022 </b>
+      </p>
+      <form name="contact-fr" action="/fr/registration-received" netlify>
+        <p>
+          <label>Nombre de personnes</label>
+          <input
+            type="number"
+            inputmode="decimal"
+            name="amountOfPersons"
+            required
+          />
+        </p>
+        <p>
+          <label>Nom/Prénom</label>
+          <input
+            type="text"
+            inputmode="text"
+            autocomplete="name"
+            name="name"
+            required
+          />
+        </p>
+        <p>
+          <label>Téléphone portable</label>
+          <input
+            type="tel"
+            inputmode="tel"
+            autocomplete="tel"
+            name="phone"
+            required
+          />
+        </p>
+        <p>
+          <label>Email</label>
+          <input
+            type="email"
+            inputmode="email"
+            autocomplete="email"
+            name="email"
+            required
+          />
+        </p>
+        <label style="margin-bottom: 0.4em; margin-top: 2em"
+          >Journée de visite</label
+        >
+        <div>
+          <input
+            id="jan-26"
+            type="radio"
+            name="visitday"
+            value="26.01.2022"
+            required
+          />
+          <label for="jan-26">Mercredi 26 janvier 2022</label>&emsp;
+        </div>
+        <div>
+          <input id="jan-27" type="radio" name="visitday" value="27.01.2022" />
+          <label for="jan-27">Jeudi 27 janvier 2022</label>
+        </div>
+        <label style="margin-bottom: 0.4em; margin-top: 2em">
+          Je fais/nous faisons appel au service de navette à partir de
+        </label>
+        <div>
+          <input
+            type="radio"
+            id="noShuttle"
+            name="shuttlebus"
+            value="Kein Shuttle"
+            checked
+          />
+          <label for="noShuttle">Pas de navette</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="grauholz"
+            name="shuttlebus"
+            value="Grauholz"
+          />
+          <label for="grauholz">Restoroute Grauholz</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="egerkingen"
+            name="shuttlebus"
+            value="Egerkingen"
+          />
+          <label for="egerkingen">Gare d'Egerkingen</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="neuenkirch"
+            name="shuttlebus"
+            value="Neuenkirch"
+          />
+          <label for="neuenkirch">Restoroute Neuenkirch</label>
+        </div>
+        <p>
+          <button style="font-size: 1.2em; font-weight: 600" type="submit">
+            Envoyer l'inscription
+          </button>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="section-dark">
   <div class="container">
     <h2>Devenez exposant!</h2>
 
@@ -37,12 +176,7 @@ lang: fr
       <li>Places de parking gratuites</li>
       <li>Apéritif des exposants le premier soi</li>
     </ul>
-  </div>
-</section>
-
-<section class="section-dark">
-  <div class="container">
-    <h2>Documents</h2>
+    <h3>Documents</h3>
     <p>
       <a
         class="btn"
