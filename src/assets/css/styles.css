@@ -250,7 +250,10 @@ ul.small-logos img {
 }
 
 .winter {
-  background: center / cover no-repeat url(/img/wintershow.jpg);
+  background-image: url(/img/wintershow.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .winter.show2019 {
   background-image: url(/img/wintershow-2019/wintershow-2019-pano1.jpg);
@@ -259,9 +262,17 @@ ul.small-logos img {
   background-image: url(/img/wintershow-2020/pano.jpg);
 }
 .winter.show2022 {
-  background-image: url(/img/wintershow-2022/background.jpg);
+  background-image: url(/img/wintershow-2022/mobile.jpg);
+  background-position: bottom;
   color: white;
   text-shadow: 4px 3px 20px #00000091;
+  padding-bottom: 110vw;
+}
+@media (min-width: 600px) {
+  .winter.show2022 {
+    background-image: url(/img/wintershow-2022/desktop.jpg);
+    padding-bottom: 10vw;
+  }
 }
 .winter.show2020:before {
   content: '';
