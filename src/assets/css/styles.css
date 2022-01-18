@@ -114,6 +114,12 @@ img.logo {
   margin-right: auto;
 }
 
+@media (max-width: 700px) {
+  .container {
+    overflow: hidden;
+  }
+}
+
 footer {
   color: white;
   background-color: #444;
@@ -268,7 +274,7 @@ ul.small-logos img {
   text-shadow: 4px 3px 20px #00000091;
   padding-bottom: 110vw;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   .winter.show2022 {
     background-image: url(/img/wintershow-2022/desktop.jpg);
     padding-bottom: 10vw;

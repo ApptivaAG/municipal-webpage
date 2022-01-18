@@ -6,6 +6,92 @@ description: >
 image: /img/wintershow.jpg
 slug: /de/wintershow-2022/
 lang: de
+
+exhibitors:
+  - name: Ad. Bachmann
+    uri: ad-bachmann.jpg
+    link: http://www.adbachmannag.ch/
+  - name: Blue 4 you
+    uri: blueforyou.png
+  - name: Fiedler
+    uri: fiedler.jpg
+    link: https://www.fiedler-maschinenbau.de/
+  - name: Hako
+    uri: hako.jpg
+    link: https://www.hako.ch/
+  - name: Heini
+    uri: heini.png
+    link: https://www.heini-ag.ch/
+  - name: Hilltip
+    uri: hilltip.jpg
+    link: http://www.grebo-ag.ch/
+  - name: Hostettler
+    uri: hostettler.jpg
+    link: https://www.hostettler.com/power-products/
+  - name: JCB
+    uri: jcb.png
+    link: http://www.jcb-agri.ch/
+  - name: Keckex
+    uri: keckex.jpg
+    link: https://www.keckex.com/
+  - name: König
+    uri: koenig.jpg
+    link: https://konigchain.com/de_ch/ketten_de/
+  - name: Kubota
+    uri: kubota.jpg
+  - name: Liebherr
+    uri: liebherr.jpg
+    link: https://www.liebherr.com/de/che/start/startseite.html
+  - name: Mutter
+    uri: mutter.jpg
+    link: https://www.mutter-solutions.com/
+  - name: Øveraasen
+    uri: overaasen.jpg
+    link: https://overaasen.no/overaasen
+  - name: Schiltrac
+    uri: schiltrac.png
+    link: https://www.barmettler.ch/
+  - name: Snowstick
+    uri: snowstick.jpg
+    link: https://snowstick.info/de/
+  - name: Steyr
+    uri: steyr.png
+    link: https://www.case-steyr-center.ch/
+  - name: Stiga
+    uri: stiga.png
+  - name: Syntrac
+    uri: syntrac.png
+  - name: Timan
+    uri: timan.jpg
+  - name: Wintec
+    uri: wintec.png
+  - name: Aebi & Co. AG Maschinenfabrik
+    uri: aebi-schmidt.png
+    link: https://www.aebi-schmidt.com
+  - name: Campus Sursee
+    uri: campus-sursee.jpg
+    link: https://www.campus-sursee.ch
+  - name: Grebo AG
+    uri: grebo.png
+    link: https://www.grebo-ag.ch
+  - name: JCB Agri Schweiz
+    uri: serco.png
+    link: https://www.jcb-agri.ch
+  - name: Larag AG
+    uri: larag.jpg
+    link: https://www.larag.com
+  - name: NG Green Innovations GmbH
+    uri: ng-green.png
+    link: https://www.ng-green.com
+  - name: Same Deutz-Fahr Schweiz AG
+    uri: sdf.jpg
+    link: https://same-deutz-fahr-schweiz-ag.business.site/
+  - name: Wille
+    uri: wille.jpg
+    link: https://www.willemachines.com
+  - name: Yamaha
+    uri: yamaha-corp.png
+    link: https://www.yamaha-motor.ch
 ---
 
 <section class="winter show2022">
@@ -154,6 +240,36 @@ lang: de
         </p>
       </form>
     </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Aussteller</h2>
+    <ul class="no-bullets small-logos">
+      <% page.exhibitors.forEach(function(image) { %>
+      <li>
+        <% if(image.link){ %>
+        <a
+          class="block"
+          href="<%= image.link %>"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src="/img/wintershow-2022/logos/<%= image.uri %>"
+            alt="<%= image.name %>"
+          />
+        </a>
+        <% } else{ %>
+        <img
+          src="/img/wintershow-2022/logos/<%= image.uri %>"
+          alt="<%= image.name %>"
+        />
+        <% } %>
+      </li>
+      <% }) %>
+    </ul>
   </div>
 </section>
 
