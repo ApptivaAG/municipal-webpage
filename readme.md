@@ -1,5 +1,7 @@
 # Suisse Municipal
 
+ARCHIVED: Is running on WIX now.
+
 ## Install
 
 `npm i`
